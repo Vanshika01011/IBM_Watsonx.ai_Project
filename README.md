@@ -46,7 +46,7 @@ Thousands of road and bridge projects under PMGSY need to be classified into dif
 - **Confusion Matrix**
 
 ---
-## Deployment on IBM Cloud Lite
+## ☁️ Deployment on IBM Cloud Lite
 
 - **IBM Watson Studio**: Used for model training, testing, and experimentation in a Jupyter notebook environment.
 - **IBM Cloud Object Storage**: Used to store and access datasets securely in the cloud.
