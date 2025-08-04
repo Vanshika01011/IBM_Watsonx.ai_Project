@@ -1,32 +1,59 @@
-🚧 PMGSY Scheme Classification Using Machine Learning
-This project aims to automatically classify road and bridge construction projects under the Pradhan Mantri Gram Sadak Yojana (PMGSY) into their correct schemes (PMGSY-I, PMGSY-II, RCPLWEA) based on their physical and financial attributes. The solution leverages machine learning techniques and is deployed on IBM Cloud Lite.
-📂 Project Overview
-Traditional manual classification of PMGSY projects is time-consuming, error-prone, and unscalable as thousands of new projects are sanctioned each year. This system automates the process using historical project data to improve accuracy, transparency, and efficiency in monitoring and planning.
+# 🚧 PMGSY Scheme Classification Using Machine Learning
 
-🧩 Solution Components
-1️⃣ Data Collection
-1. Source: AI Kosh PMGSY dataset
-  -> Dataset Link
-2. Data includes:
-  -> Project location (State, District)
-  -> Road length, road type, terrain
-  -> Estimated cost
-  -> Project duration and dates
-  -> Whether the project includes a bridge
-  -> Target scheme label
-2️⃣ Model Development
-Algorithms used:
-  -> Random Forest
-  -> XGBoost
-  -> Logistic Regression (baseline)
-Evaluation metrics:
-  -> Accuracy
-  -> F1-Score
-  -> Confusion Matrix
-3️⃣ Deployment on IBM Cloud Lite
-  -> IBM Watson Studio: For training and experimentation
-  -> IBM Cloud Object Storage: For storing datasets
-  -> IBM Watson Machine Learning: For deploying the model as an API
-  -> User Interface: Simple web app to input project details and get scheme predictions
+This project aims to classify road and bridge construction projects under the **Pradhan Mantri Gram Sadak Yojana (PMGSY)** into their correct scheme (e.g., PMGSY-I, PMGSY-II, RCPLWEA) using machine learning. The goal is to support better infrastructure planning, transparency, and decision-making. The model is deployed using **IBM Cloud Lite** services.
+
+---
+
+## 📌 Problem Statement
+
+Thousands of road and bridge projects under PMGSY need to be classified into different schemes. Currently, this is done manually, which is time-consuming and prone to errors. This project builds an ML-based solution to automate the classification using project data like location, road length, cost, and duration.
+
+---
+
+## 📂 Dataset
+
+- **Source:** [AI Kosh PMGSY Dataset](https://aikosh.indiaai.gov.in/web/datasets/details/pradhan_mantri_gram_sadak_yojna_pmgsy.html)
+- **Features include:**
+  - State and district
+  - Road type and length
+  - Estimated cost
+  - Start and end date
+  - Whether it's a bridge project
+  - Target scheme label (PMGSY-I, PMGSY-II, RCPLWEA)
+
+---
+
+## 🧪 Technologies Used
+
+- Python
+  - Pandas, Scikit-learn, XGBoost
+- IBM Cloud Lite
+  - IBM Watson Studio
+  - IBM Cloud Object Storage
+  - IBM Watson Machine Learning
+  - (Optional) IBM Cloud Functions
+
+---
+
+## 🔧 Steps to Run the Project
+
+### 1. IBM Cloud Setup
+- Create a free [IBM Cloud Lite](https://www.ibm.com/cloud/free) account.
+- Set up a Watson Studio project.
+- Upload the dataset to IBM Cloud Object Storage.
+
+### 2. Model Development
+- Open the Jupyter Notebook in Watson Studio.
+- Perform data preprocessing and feature engineering.
+- Train the model using Random Forest, XGBoost, or Logistic Regression.
+- Evaluate using Accuracy, F1-Score, and Confusion Matrix.
+
+### 3. Model Deployment
+- Deploy the trained model using IBM Watson Machine Learning.
+- Expose it via a REST API for real-time predictions.
+
+### 4. Prediction
+- Use a Python script or frontend app to send project data and receive the predicted PMGSY scheme.
+
 
 
