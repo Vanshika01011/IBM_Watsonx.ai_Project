@@ -31,29 +31,30 @@ Thousands of road and bridge projects under PMGSY need to be classified into dif
   - IBM Watson Studio
   - IBM Cloud Object Storage
   - IBM Watson Machine Learning
-  - (Optional) IBM Cloud Functions
 
 ---
+## 🚀 Model Development
 
-## 🔧 Steps to Run the Project
+### ✅ Algorithms Used
+- **Random Forest**
+- **XGBoost**
+- **Logistic Regression** (baseline model)
 
-### 1. IBM Cloud Setup
-- Create a free [IBM Cloud Lite](https://www.ibm.com/cloud/free) account.
-- Set up a Watson Studio project.
-- Upload the dataset to IBM Cloud Object Storage.
+### 📊 Evaluation Metrics
+- **Accuracy**
+- **F1-Score**
+- **Confusion Matrix**
 
-### 2. Model Development
-- Open the Jupyter Notebook in Watson Studio.
-- Perform data preprocessing and feature engineering.
-- Train the model using Random Forest, XGBoost, or Logistic Regression.
-- Evaluate using Accuracy, F1-Score, and Confusion Matrix.
+---
+## Deployment on IBM Cloud Lite
 
-### 3. Model Deployment
-- Deploy the trained model using IBM Watson Machine Learning.
-- Expose it via a REST API for real-time predictions.
+- **IBM Watson Studio**: Used for model training, testing, and experimentation in a Jupyter notebook environment.
+- **IBM Cloud Object Storage**: Used to store and access datasets securely in the cloud.
+- **IBM Watson Machine Learning**: Used to deploy the trained model as a RESTful API for real-time prediction.
+- **IBM Cloud Functions (Optional)**: Can be used to automatically trigger predictions or workflows based on events.
+- **User Interface**: A simple web application (optional) to input project details and receive predicted PMGSY scheme classifications from the deployed model.
 
-### 4. Prediction
-- Use a Python script or frontend app to send project data and receive the predicted PMGSY scheme.
+
 
 
 
